@@ -73,7 +73,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/BUILV2.loader.js"></script>
+    <script src="Build/BUILDV3.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -105,9 +105,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BUILV2.data.br",
-                    frameworkUrl: "Build/BUILV2.framework.js.br",
-                    codeUrl: "Build/BUILV2.wasm.br",
+                    dataUrl: "Build/BUILDV3.data.br",
+                    frameworkUrl: "Build/BUILDV3.framework.js.br",
+                    codeUrl: "Build/BUILDV3.wasm.br",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "ARWEBV2",
