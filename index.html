@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | ARWEBV2</title>
+    <title>Unity WebGL Player | WebARTracker</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -34,7 +34,11 @@
 </head>
 <body>
     <!--IMAGETARGETS-->
-		<imagetarget id='PIURADETECCION' src='targets/PIURADETECCION.JPG'></imagetarget>
+		<imagetarget id='Escanear' src='targets/parte scanear_.png'></imagetarget>
+		<imagetarget id='M2parte scanearP2' src='targets/M2_parte scanear_.png'></imagetarget>
+		<imagetarget id='EscanearArequipaV2' src='targets/DeteccionArequipaV2.jpeg'></imagetarget>
+		<imagetarget id='ESCANEARPIURA' src='targets/RecortadoPIURA.png'></imagetarget>
+		<imagetarget id='ICACARADETECCIONV2' src='targets/ICACARADETECCION.JPG'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -73,7 +77,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/BUILDV3.loader.js"></script>
+    <script src="Build/V6Build.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -105,12 +109,12 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BUILDV3.data.br",
-                    frameworkUrl: "Build/BUILDV3.framework.js.br",
-                    codeUrl: "Build/BUILDV3.wasm.br",
+                    dataUrl: "Build/V6Build.data.unityweb",
+                    frameworkUrl: "Build/V6Build.framework.js.unityweb",
+                    codeUrl: "Build/V6Build.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "ARWEBV2",
+                    productName: "WebARTracker",
                     productVersion: "0.1.0",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
