@@ -77,7 +77,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/BuildPiuraV14.loader.js"></script>
+    <script src="Build/BuildV15.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -109,9 +109,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BuildPiuraV14.data.unityweb",
-                    frameworkUrl: "Build/BuildPiuraV14.framework.js.unityweb",
-                    codeUrl: "Build/BuildPiuraV14.wasm.unityweb",
+                    dataUrl: "Build/BuildV15.data.unityweb",
+                    frameworkUrl: "Build/BuildV15.framework.js.unityweb",
+                    codeUrl: "Build/BuildV15.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WebARTracker",
